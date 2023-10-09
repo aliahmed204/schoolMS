@@ -17,8 +17,7 @@ class GradeFactory extends Factory
     public function definition(): array
     {
         return [
-            'name'=> $this->faker->randomElement(['primary','secondary','high-school','high']),
-            'notes'=> 'any notes for garde',
+
         ];
     }
 }

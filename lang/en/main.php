@@ -14,11 +14,18 @@ return [
     */
 
     'Dashboard' => 'Dashboard',
+    'Welcome' => 'Welcome',
     'Dashboard_page' => 'Dashboard',
     'Grades_list' => 'Grades list',
     'Grades' => 'Grads',
+    'subjects_list' => 'subjects list',
+    'Exams'=>'Quizzes',
+    'graduated_list'=>'graduated students list',
+    'questions_list'=>'Questions list',
+
 
     'login' => 'Log-in',
+    'login_as' => 'Log-as',
     'email' => 'E-mail',
     'pass' => 'Password',
     'remember' => 'remember me',
@@ -34,6 +41,9 @@ return [
     'List_sections'=>'List Sections',
     'students'=>'Students',
     'add_student'=>'Add student',
+    'edit_student'=>' Edit student ',
+    'promotion'=>' Student Promotion ',
+    'manage_promotion'=>' Manage Promotions ',
     'information_student'=>'Information Students',
     'Students_upgrade'=>'Students Upgrade',
     'Graduate_students'=>'Graduate Students',
@@ -44,14 +54,46 @@ return [
     'List_Parents'=>'List Parents',
     'Accounts'=>'Accounts',
     'Attendance'=>'Attendance',
-    'Exams'=>'Exams',
+    'Attendance_list'=>'Attendance List',
+    'today'=>'Today Date',
+    'onlineClasses'=>'online Classes',
+
     'library'=>'Library',
     'Onlineclasses'=>'Online classes',
     'Settings'=>'Settings',
     'Users'=>'Users',
     'Copyright' => 'Copyright',
-    'Name_Programer' => 'SamirGamal MoraSoft All Rights Reserved'
 
 
+    'fees_list' => 'Fees list',
+    'add_fee' => 'Add Fees',
+    'edit_fee' => 'Edit Fees',
+    'invoices' => 'Invoices',
+    'students_count' => 'Students',
+    'teachers_count' => 'Teachers',
+    'parents_count'  => 'Parents',
+    'sections_count' => 'Sections',
+    'show_info' => 'Show More Info',
+    'created_at' => 'Created At ',
+    'latest_update' => 'System Latest Updates',
+    'teacher_latest_update' => 'Teacher Latest Updates',
+    'Teacher_Profile' => 'Teacher Profile',
+    'Student_Profile' => 'Student Profile',
+
+    'Event_Delete' => 'Are You Sure You Want Complete Delete This Event? ',
+    'Delete' =>' Delete ',
+    'Deleted' =>' Event Has Been Deleted ',
+    'Cancel' =>' Cancel ',
+    'Event_created' =>' Event Has Been Created Successfully ',
+    'Event_create' =>' Enter Event Title ',
+    'not_created' =>' Please Enter Event Title To create it ',
+
+    'Attendance_reports' => ' Attendance Reports ',
+    'search_info' => 'search_info ',
+    'from' => 'from',
+    'start' => 'start Date ',
+    'to' => ' to',
+    'end' => 'end Date',
+    'allStudents' => ' all Students',
 
 ];

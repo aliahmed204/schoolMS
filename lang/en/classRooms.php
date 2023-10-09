@@ -20,7 +20,11 @@ return [
     'delete_row'=>'Delete row',
     'Processes'=>'Processes',
     'Edit'=>'Edit',
+    'edit_Grade'=>'Edit Grade',
+    'stage_name_ar'=>'stage_name_ar',
+    'stage_name_en'=>'stage_name_en',
     'Delete'=>'Delete',
+    'delete_Grade'=>'Delete Grade',
     'delete_Class_Error'=>'The Class cannot be Deleted because it contains Sections',
     'Close' => 'Close',
 

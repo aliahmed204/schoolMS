@@ -28,6 +28,8 @@ return [
     'delete_Grade_Error'=>'The Grade cannot be deleted because there are classes attached to it',
     'Edit'=>'Edit',
 
+    'select'=> '--Select Grade--',
+
     'exists'=>'This Grade is already exists',
     'Delete'=>'Delete',
     'Close' => 'Close',

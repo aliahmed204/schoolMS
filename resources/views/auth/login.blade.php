@@ -18,7 +18,11 @@
         href="https://fonts.googleapis.com/css?family=Poppins:200,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900">
 
     <!-- css -->
-    <link href="{{ URL::asset('assets/css/rtl.css') }}" rel="stylesheet">
+    @if (App::getLocale() == 'en')
+        <link href="{{ asset('assets/css/ltr.css') }}" rel="stylesheet">
+    @else
+        <link href="{{ asset('assets/css/rtl.css') }}" rel="stylesheet">
+    @endif
 
 </head>
 
@@ -40,11 +44,11 @@
  login-->
 
         <section class="height-100vh d-flex align-items-center page-section-ptb login"
-            style="background-image: url(assets/images/login-bg.jpg);">
+                 style="background-image: url('{{ asset('assets/images/sativa.png')}}');">
             <div class="container">
                 <div class="row justify-content-center no-gutters vertical-align">
                     <div class="col-lg-4 col-md-6 login-fancy-bg bg"
-                        style="background-image: url(images/login-inner-bg.jpg);">
+                        style="background-image: url('{{ asset('assets/images/login-inner-bg.jpg')}}');">
                         <div class="login-fancy">
                             <h2 class="text-white mb-20">Hello world!</h2>
                             <p class="mb-20 text-white">Create tailor-cut websites with the exclusive multi-purpose
@@ -57,15 +61,25 @@
                     </div>
                     <div class="col-lg-4 col-md-6 bg-white">
                         <div class="login-fancy pb-40 clearfix">
-                            <h3 class="mb-30">{{ __('main.login') }}</h3>
+                            {{--Head Prograph--}}
+                            @if($type == 'web')
+                                <h3 class="mb-30">{{ __('main.login_admin') }}</h3>
+                            @elseif($type == 'student')
+                                <h3 class="mb-30">{{ __('main.login_student') }}</h3>
+                            @elseif($type == 'parent')
+                                <h3 class="mb-30">{{ __('main.login_parent') }}</h3>
+                            @elseif($type == 'teacher')
+                                <h3 class="mb-30">{{ __('main.login_teacher') }}</h3>
+                            @endif
 
-                            <form method="POST" action="{{ route('login') }}">
+                            <form method="POST" action="{{ route( 'login',['type' => $type]) }}">
                                 @csrf
 
                                 <div class="section-field mb-20">
-                                    <label class="mb-10" for="name">{{ __('main.email') }}*</label>
+                                    <label class="mb-10" for="name">{{ __('main.email') }}</label>
                                     <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email"
                                         value="{{ old('email') }}" required autocomplete="email" autofocus>
+                                    <input value="{{$type}}" type="hidden" name="type">
                                     @error('email')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -75,7 +89,7 @@
                                 </div>
 
                                 <div class="section-field mb-20">
-                                    <label class="mb-10" for="Password">{{ __('main.pass') }} * </label>
+                                    <label class="mb-10" for="Password">{{ __('main.pass') }}</label>
                                     <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password"
                                         required autocomplete="current-password">
 

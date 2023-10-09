@@ -13,8 +13,11 @@ return [
     |
     */
 
-   
+
     'success'=>'Data has been saved successfully',
     'Update'=>'Data has been Updated successfully',
     'Delete'=>'Data has been Deleted successfully',
+    'image_deleted'=>'Image has been Deleted successfully',
+    'noReceipt'=>'There Is No Receipt yet',
+    'restored'=>'Student has been restored successfully',
 ];

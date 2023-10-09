@@ -14,17 +14,24 @@ return [
     */
 
     'Dashboard' => 'لوحة التحكم',
+    'Welcome' => 'مرحباً بك ',
     'Dashboard_page' => 'لوحة التحكم',
     'Grades' => 'المراحل الدراسية',
     'Grades_list' => 'قائمة المراحل الدراسية',
-    'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
+    'subjects_list' => 'قائمة المواد الدراسية',
+    'Exams'=>'الأختبارات',
+    'graduated_list'=>'قائمة الطلاب المتخرجين',
+    'questions_list'=>'بنك الأسئلة',
 
     'login' => 'تسجيل الدخول',
+    'login_as' => ' سجيل الدخول كـ',
     'email' => 'البريد الإلكترونى',
     'pass' => ' كلمة المرور',
     'remember' => ' تذكرنى ',
     'forget' => ' هل نسيت كلمة المرور ',
     'enter' => ' دخول ',
+
+    'Deleted' => ' تم الحذف ',
 
     'Main_title'=>'برنامج إدارة المدارس',
     'Programname' => 'برنامج إدارة المدارس',
@@ -35,6 +42,9 @@ return [
     'List_sections'=>'قائمة الاقسام الدراسية',
     'students'=>'الطلاب',
     'add_student'=>'اضافة طالب جديد',
+    'edit_student'=>'تعديل الطالب ',
+    'promotion'=>'ترقية الطالب ',
+    'manage_promotion'=>'إدارة ترقية الطلاب',
     'Teachers'=>'المعلمين',
     'List_Teachers' => 'قائمة المعلمين',
     'Parents'=>'اولياء الامور',
@@ -42,12 +52,53 @@ return [
     'Add_Parent'=>'اضافة ولي امر',
     'Accounts'=>'الحسابات',
     'Attendance'=>'الحضور والغياب',
-    'Exams'=>'الامتحانات',
+    'Attendance_list'=>'قائمة الحضور والغياب',
+    'today'=>'تاريخ اليوم',
+    'onlineClasses'=>'محاضرة أونلاين',
+
     'library'=>'المكتبة',
     'Onlineclasses'=>'حصص اونلاين',
     'Settings'=>'الاعدادات',
     'Users'=>'المستخدمين',
     'Copyright' => 'جميع الحقوق محفوظة ',
-    'Name_Programer' => 'سمير جمال مورا سوفت'
+
+
+    'fees_list' => 'قائمة الرسوم الدراسية ',
+    'add_fee' => 'إضافة رسوم جديدة ',
+    'edit_fee' => 'تعديل الرسوم ',
+    'invoices' => 'الفواتير',
+
+    'students_count' => 'عدد الطلاب',
+    'teachers_count' => 'عدد الاساتذة',
+    'parents_count'  => 'عدد أولياء الأمور',
+    'sections_count' => 'عدد الفصول الدراسية',
+    'show_info' => 'عرض البيانات',
+    'created_at' => 'تاريخ الإنشاء',
+
+    'latest_update' => 'أخر التحديثات على النظام',
+    'teacher_latest_update' => 'أخر التحديثات المدرس على النظام',
+    'Teacher_Profile' => 'الملف الشخصى للأستاذ',
+
+    'Student_Profile' => 'الملف الشخصى للطالب',
+
+
+
+    'Event_Delete' => 'هل أنت متأكد من أنك تريد حذف ذلك الحدث ؟',
+    'Delete' =>' تأكيد الحذف',
+    'Cancel' =>'إغلاق',
+    'Event_created' =>'تم إنشاء الحدث بنجاح',
+    'Event_create' =>'ادخل عنوان الحدث',
+    'not_created' =>'ادخل عنوان الحدث لكى يتم إنشاءه',
+
+
+    'Attendance_reports' => 'تقرير الحضور والغياب',
+    'search_info' => 'معلومات البحث',
+    'from' => 'من',
+    'start' => ' تاريخ البداية',
+    'to' => ' إلى',
+    'end' => ' تاريخ النهاية',
+    'allStudents' => ' الكل',
+
+
 
 ];

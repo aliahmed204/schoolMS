@@ -90,27 +90,37 @@
                 </li>
                 <li class="nav-item dropdown mr-30">
                     <a class="nav-link nav-pill user-avatar" data-toggle="dropdown" href="#" role="button"
-                        aria-haspopup="true" aria-expanded="false">
-                        <img src="assets/images/profile-avatar.jpg" alt="avatar">
+                       aria-haspopup="true" aria-expanded="false">
+                        <img src="{{ URL::asset('assets/images/user.png') }}" alt="avatar">
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">
                         <div class="dropdown-header">
                             <div class="media">
                                 <div class="media-body">
-                                    <h5 class="mt-0 mb-0">Michael Bean</h5>
-                                    <span>michael-bean@mail.com</span>
+                                    <h5 class="mt-0 mb-0">{{ Auth::user()->name }}</h5>
+                                    <span>{{ Auth::user()->email }}</span>
                                 </div>
                             </div>
-                        </div>
+                        </div>{{ __('Sidebar_trans.Logoff') }}
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#"><i class="text-secondary ti-reload"></i>Activity</a>
                         <a class="dropdown-item" href="#"><i class="text-success ti-email"></i>Messages</a>
                         <a class="dropdown-item" href="#"><i class="text-warning ti-user"></i>Profile</a>
-                        <a class="dropdown-item" href="#"><i class="text-dark ti-layers-alt"></i>Projects <span
-                                class="badge badge-info">6</span> </a>
+                        <a class="dropdown-item" href="#"><i class="text-dark ti-layers-alt"></i>Projects <span class="badge badge-info">6</span> </a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#"><i class="text-info ti-settings"></i>Settings</a>
-                        <a class="dropdown-item" href="#"><i class="text-danger ti-unlock"></i>Logout</a>
+                        @if(auth('student')->check())
+                        <form method="POST" action="{{ route('logout',['type'=>'student']) }}">
+                        @elseif(auth('teacher')->check())
+                        <form method="POST" action="{{ route('logout',['type'=>'teacher']) }}">
+                        @elseif(auth('parent')->check())
+                        <form method="POST" action="{{ route('logout',['type'=>'parent']) }}">
+                        @else
+                        <form method="POST" action="{{ route('logout',['type'=>'web']) }}">
+                        @endif
+                            @csrf
+                            <a class="dropdown-item" href="#" onclick="event.preventDefault();this.closest('form').submit();"><i class="bx bx-log-out"></i>تسجيل الخروج</a>
+                        </form>
                     </div>
                 </li>
             </ul>

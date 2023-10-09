@@ -20,7 +20,11 @@ return [
     'delete_row'=>'حذف',
     'Processes'=>'العمليات',
     'Edit'=>'تعديل',
+    'edit_Grade'=>'تعديل',
+    'stage_name_ar'=>'أسم المرحلة باللغة العربية',
+    'stage_name_en'=>'أسم المرحلة باللغة الأنجليزية',
     'Delete'=>'حذف',
+    'delete_Grade'=>' حذف',
     'delete_Class_Error'=>'لا يمكن حذف الصف لأنه يحتوي علي أقسام',
     'Close' => 'إغلاق',
 

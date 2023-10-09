@@ -24,4 +24,11 @@ class Section extends Model
     public function grade(){
         return $this->belongsTo(Grade::class);
     }
+
+    public function students(){
+        return $this->hasMany(Student::class);
+    }
+    public function teachers(){
+        return $this->belongsToMany(Teacher::class , 'section_teacher');
+    }
 }
